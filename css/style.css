@@ -11,10 +11,12 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -25,32 +27,42 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
 }
+
 p {
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--blanco);
 }
+
 a {
     text-decoration: none;
 }
+
 img {
     width: 100%;
 }
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     text-align: center;
     color: var(--secundario);
     font-family: var(--fuentePrincipal);
 }
+
 h1 {
     font-size: 4rem;
 }
+
 h2 {
     font-size: 3.2rem;
 }
+
 h3 {
     font-size: 2.4rem;
 }
@@ -60,33 +72,39 @@ h3 {
     display: flex;
     justify-content: center;
 }
+
 .header__logo {
     margin: 3rem 0;
 }
+
 /** Footer **/
 .footer {
     background-color: var(--primarioOscuro);
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
 .footer__texto {
     font-family: var(--fuentePrincipal);
     text-align: center;
     font-size: 2.2rem;
 }
+
 /** Navegacion **/
 .navegacion {
     background-color: var(--primarioOscuro);
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    gap: 2rem; 
+    gap: 2rem;
 }
+
 .navegacion__enlace {
     font-family: var(--fuentePrincipal);
     color: var(--blanco);
     font-size: 3rem;
 }
+
 .navegacion__enlace--activo,
 .navegacion__enlace:hover {
     color: var(--secundario);
@@ -98,6 +116,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
+
 @media (min-width: 768px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
@@ -113,10 +132,12 @@ h3 {
 .producto__nombre {
     font-size: 4rem;
 }
+
 .producto__precio {
     font-size: 2.8rem;
     color: var(--secundario);
 }
+
 .producto__nombre,
 .producto__precio {
     font-family: var(--fuentePrincipal);
@@ -132,10 +153,12 @@ h3 {
     background-size: cover;
     grid-column: 1 / 3;
 }
+
 .grafico--discos {
     grid-row: 2 / 3;
     background-image: url(../img/grafico1.jpg);
 }
+
 .grafico--node {
     background-image: url(../img/grafico2.jpg);
     grid-row: 8 / 9;
@@ -153,18 +176,21 @@ h3 {
     display: grid;
     grid-template-rows: repeat(2, auto);
 }
+
 @media (min-width: 768px) {
     .nosotros {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
 }
+
 .nosotros__imagen {
     grid-row: 1 / 2;
 }
+
 @media (min-width: 768px) {
     .nosotros__imagen {
-       grid-column: 2 / 3;
+        grid-column: 2 / 3;
     }
 }
 
@@ -174,6 +200,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
+
 @media (min-width: 768px) {
     .bloques {
         grid-template-columns: repeat(4, 1fr);
@@ -202,15 +229,17 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
+
 .formulario__campo {
-   border: 1rem solid var(--primarioOscuro);
-   background-color: var(--secundario);
-   color: var(--primarioOscuro);
-   font-size: 2rem;
-   font-family: Arial, Helvetica, sans-serif;
-   padding: 1rem;
-   appearance: none;
+    border: 1rem solid var(--primarioOscuro);
+    background-color: var(--secundario);
+    color: var(--primarioOscuro);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none;
 }
+
 .formulario__submit {
     background-color: var(--secundario);
     border: none;
@@ -220,6 +249,7 @@ h3 {
     transition: background-color .3s ease;
     grid-column: 1 / 3;
 }
+
 .formulario__submit:hover {
     cursor: pointer;
     background-color: var(--secundarioOscuro);
@@ -230,7 +260,7 @@ h3 {
     width: 350px;
     margin-top: auto;
     margin-bottom: auto;
-    background: #f39c12;
+    background: var(--primario);
     position: relative;
     display: flex;
     justify-content: center;
@@ -242,48 +272,57 @@ h3 {
     border-radius: 5px;
 
 }
+
 .brand_logo_container {
     position: absolute;
     height: 170px;
     width: 170px;
     top: -75px;
     border-radius: 50%;
-    background: #60a3bc;
+    background: var(--primario);
     padding: 10px;
     text-align: center;
 }
+
 .brand_logo {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--primarioOscuro);
 }
+
 .form_container {
     margin-top: 100px;
 }
+
 .login_btn {
     width: 100%;
-    background: #c0392b !important;
+    background: var(--secundario) !important;
     color: white !important;
 }
+
 .login_btn:focus {
     box-shadow: none !important;
     outline: 0px !important;
 }
+
 .login_container {
     padding: 0 2rem;
 }
+
 .input-group-text {
-    background: #c0392b !important;
+    background: var(--secundario) !important;
     color: white !important;
     border: 0 !important;
     border-radius: 0.25rem 0 0 0.25rem !important;
 }
+
 .input_user,
 .input_pass:focus {
     box-shadow: none !important;
     outline: 0px !important;
 }
+
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #c0392b !important;
+    background-color: var(--secundario) !important;
 }
